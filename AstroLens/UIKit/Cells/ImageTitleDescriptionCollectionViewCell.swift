@@ -17,8 +17,14 @@ class ImageTitleDescriptionCollectionViewCell: UICollectionViewCell {
         case hasContent
     }
     
-    override func awakeFromNib() {
+    nonisolated override func awakeFromNib() {
         super.awakeFromNib()
+        Task { @MainActor in
+            awakeFromNibOnMainThread()
+        }
+    }
+    
+    private func awakeFromNibOnMainThread() {
         loadingIndicator.hidesWhenStopped = true
         loadingIndicator.color = .white
         dateLabel.adjustsFontForContentSizeCategory = true

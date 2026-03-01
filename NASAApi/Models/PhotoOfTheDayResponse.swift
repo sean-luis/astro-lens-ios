@@ -1,4 +1,4 @@
-public struct PhotoOfTheDayResponse: Codable {
+nonisolated public struct PhotoOfTheDayResponse: Codable {
     var title: String
     var date: String
     var description: String

@@ -5,7 +5,7 @@ import DataStore
 
 final class PhotoOfTheDayCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     private let kCellIdentifier = "ImageTitleDescriptionCollectionViewCell"
-    private let landingScreenViewModel = LandingScreenViewModel(numberOfPhotosToRetrieve: 7)
+    private let landingScreenViewModel = LandingScreenViewModel(service: NASAServiceImplementation())
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,16 +45,16 @@ final class PhotoOfTheDayCollectionViewController: UICollectionViewController, U
         view.addGestureRecognizer(doubleTapGesture)
     }
     
-    @objc private func doubleTapAction(sender: UITapGestureRecognizer) {
+    @objc private func doubleTapAction(sender: UITapGestureRecognizer) async {
         let doubleTapPoint = sender.location(in: collectionView)
         guard let selectedIndexPath = collectionView.indexPathForItem(at: doubleTapPoint), let cell = collectionView.cellForItem(at: selectedIndexPath) as? ImageTitleDescriptionCollectionViewCell, cell.isLoading == false else {
             return
         }
-        guard NASAApi.shared.savedPhotos.indices.contains(selectedIndexPath.section) else {
+        guard await landingScreenViewModel.savedPhotos.indices.contains(selectedIndexPath.section) else {
             print("Saved photos does not contain selectedIndexPath: \((selectedIndexPath.section))")
             return
         }
-        let photoContent = NASAApi.shared.savedPhotos[selectedIndexPath.section]
+        let photoContent = await landingScreenViewModel.savedPhotos[selectedIndexPath.section]
         guard let _ = DataStoreImplementation.shared.retrieveObject(forKey: photoContent.date) else {
             DataStoreImplementation.shared.storeObject(forKey: photoContent.date, value: photoContent.date)
             cell.flipLikedState()
@@ -80,19 +80,23 @@ final class PhotoOfTheDayCollectionViewController: UICollectionViewController, U
         cell.contentView.layer.masksToBounds = true
         
         guard let cell = cell as? ImageTitleDescriptionCollectionViewCell else { return }
-        handleNetworkOperation(forCell: cell, atIndexPath: indexPath)
+        
+        Task { @MainActor in
+            let response = await landingScreenViewModel.fetchPhotoOfTheDay(at: indexPath)
+            await handleCellConfiguration(response: response,
+                                          image: response.image,
+                                          cell: cell,
+                                          indexPath: indexPath)
+        }
     }
     
     override func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        if let dataLoader = landingScreenViewModel.loadingOperations[indexPath] {
-            dataLoader.cancel()
-            landingScreenViewModel.loadingOperations.removeValue(forKey: indexPath)
-        }
+        // Do something here
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.selectItem(at: indexPath, animated: true, scrollPosition: .top)
-        showShareSheetForPhoto(at: indexPath)
+        Task { await showShareSheetForPhoto(at: indexPath) }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -121,43 +125,9 @@ final class PhotoOfTheDayCollectionViewController: UICollectionViewController, U
         }
     }
     
-    // MARK: - Network operations
-    func handleNetworkOperation(forCell cell: ImageTitleDescriptionCollectionViewCell, atIndexPath indexPath: IndexPath) {
-        let updateCellClosure: (PhotoOfTheDay?) -> Void = { [weak self] response in
-            DispatchQueue.main.async { [weak self] in
-                guard let self = self, let response = response else { return }
-                self.handleCellConfiguration(response: response, image: response.image, cell: cell, indexPath: indexPath)
-                self.landingScreenViewModel.loadingOperations.removeValue(forKey: indexPath)
-            }
-        }
-        
-        if let existingDataLoader = landingScreenViewModel.loadingOperations[indexPath] {
-            if let response = existingDataLoader.response {
-                DispatchQueue.main.async { [weak self] in
-                    guard let self = self else { return }
-                    self.handleCellConfiguration(response: response, image: response.image, cell: cell, indexPath: indexPath)
-                    self.landingScreenViewModel.loadingOperations.removeValue(forKey: indexPath)
-                }
-            } else {
-                // No response yet. Updating the completion handler fixes cell waiting to load issue
-                existingDataLoader.updateCompletionHandler(with: updateCellClosure)
-            }
-        } else {
-            let dataLoader = landingScreenViewModel.makeDataLoadOperation(atIndex: indexPath.section) { [weak self] response in
-                DispatchQueue.main.async { [weak self] in
-                    guard let self = self else { return }
-                    self.handleCellConfiguration(response: response, image: response.image, cell: cell, indexPath: indexPath)
-                    self.landingScreenViewModel.loadingOperations.removeValue(forKey: indexPath)
-                }
-            }
-            landingScreenViewModel.loadingQueue.addOperation(dataLoader)
-            landingScreenViewModel.loadingOperations[indexPath] = dataLoader
-        }
-    }
-    
     // MARK: - Cell configuration methods
-    private func handleCellConfiguration(response: PhotoOfTheDay, image: UIImage?, cell: ImageTitleDescriptionCollectionViewCell, indexPath: IndexPath) {
-        let isFavourite = NASAApi.shared.previousDates[indexPath.section] == DataStoreImplementation.shared.retrieveObject(forKey: response.date)
+    private func handleCellConfiguration(response: PhotoOfTheDay, image: UIImage?, cell: ImageTitleDescriptionCollectionViewCell, indexPath: IndexPath) async {
+        let isFavourite = await landingScreenViewModel.previousDates[indexPath.section] == DataStoreImplementation.shared.retrieveObject(forKey: response.date)
         animateCellConfiguration(cell: cell, date: response.date, title: response.title, image: image ?? landingScreenViewModel.defaultImage, isFavourite: isFavourite)
     }
     
@@ -174,29 +144,55 @@ final class PhotoOfTheDayCollectionViewController: UICollectionViewController, U
 // MARK: - Collection view prefetching
 extension PhotoOfTheDayCollectionViewController: UICollectionViewDataSourcePrefetching {
     func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPaths: [IndexPath]) {
-        for indexPath in indexPaths {
-            if let _ = landingScreenViewModel.loadingOperations[indexPath] { continue }
-            let dataLoader = landingScreenViewModel.makeDataLoadOperation(atIndex: indexPath.section) { [weak self] response in
-                DispatchQueue.main.async { [weak self] in
-                    guard let self = self else { return }
-                    self.landingScreenViewModel.loadingOperations.removeValue(forKey: indexPath)
-                }
-            }
-            landingScreenViewModel.loadingQueue.addOperation(dataLoader)
-            landingScreenViewModel.loadingOperations[indexPath] = dataLoader
-        }
+        Task { await landingScreenViewModel.fetchAllPhotos(indexPaths: indexPaths) }
     }
 }
 
 // MARK: - Share sheet configuration
 extension PhotoOfTheDayCollectionViewController {
-    func showShareSheetForPhoto(at indexPath: IndexPath) {
-        guard NASAApi.shared.savedPhotos.indices.contains(indexPath.section) else {
+    func showShareSheetForPhoto(at indexPath: IndexPath) async {
+        guard await landingScreenViewModel.savedPhotos.indices.contains(indexPath.section) else {
             print("Saved photos does not contain selectedIndexPath: \((indexPath.section))")
             return
         }
-        guard let photoAtIndex = NASAApi.shared.savedPhotos[indexPath.section].image else { return }
+        guard let photoAtIndex = await landingScreenViewModel.savedPhotos[indexPath.section].image else { return }
         let activityViewController = UIActivityViewController(activityItems: [photoAtIndex], applicationActivities: nil)
         present(activityViewController, animated: true)
     }
 }
+
+/*
+ // MARK: - Network operations
+ func handleNetworkOperation(forCell cell: ImageTitleDescriptionCollectionViewCell, atIndexPath indexPath: IndexPath) {
+     let updateCellClosure: (PhotoOfTheDay?) -> Void = { [weak self] response in
+         DispatchQueue.main.async { [weak self] in
+             guard let self = self, let response = response else { return }
+             self.handleCellConfiguration(response: response, image: response.image, cell: cell, indexPath: indexPath)
+             self.landingScreenViewModel.loadingOperations.removeValue(forKey: indexPath)
+         }
+     }
+     
+     if let existingDataLoader = landingScreenViewModel.loadingOperations[indexPath] {
+         if let response = existingDataLoader.response {
+             DispatchQueue.main.async { [weak self] in
+                 guard let self = self else { return }
+                 self.handleCellConfiguration(response: response, image: response.image, cell: cell, indexPath: indexPath)
+                 self.landingScreenViewModel.loadingOperations.removeValue(forKey: indexPath)
+             }
+         } else {
+             // No response yet. Updating the completion handler fixes cell waiting to load issue
+             existingDataLoader.updateCompletionHandler(with: updateCellClosure)
+         }
+     } else {
+         let dataLoader = landingScreenViewModel.makeDataLoadOperation(atIndex: indexPath.section) { [weak self] response in
+             DispatchQueue.main.async { [weak self] in
+                 guard let self = self else { return }
+                 self.handleCellConfiguration(response: response, image: response.image, cell: cell, indexPath: indexPath)
+                 self.landingScreenViewModel.loadingOperations.removeValue(forKey: indexPath)
+             }
+         }
+         landingScreenViewModel.loadingQueue.addOperation(dataLoader)
+         landingScreenViewModel.loadingOperations[indexPath] = dataLoader
+     }
+ }
+ */

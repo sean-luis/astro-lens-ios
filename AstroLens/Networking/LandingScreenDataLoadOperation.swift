@@ -1,7 +1,7 @@
 import Foundation
 import NASAApi
 
-public final class LandingScreenDataLoadOperation: Operation {
+/*public final class LandingScreenDataLoadOperation: Operation {
     public private(set) var response: PhotoOfTheDay?
     private var completionHandler: ((PhotoOfTheDay) -> Void)
     private let index: Int
@@ -17,10 +17,10 @@ public final class LandingScreenDataLoadOperation: Operation {
     
     public override func main() {
         if isCancelled { return }
-        NASAApi.shared.fetchPhotoOfTheDay(at: index, completionHandler: { [weak self] response in
+        NASAServiceImplementation.shared.fetchPhotoOfTheDay(at: index, completionHandler: { [weak self] response in
             guard let self = self else { return }
             self.response = response
             self.completionHandler(response)
         })
     }
-}
+}*/

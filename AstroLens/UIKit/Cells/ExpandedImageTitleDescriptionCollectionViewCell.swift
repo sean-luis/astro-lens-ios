@@ -11,8 +11,14 @@ class ExpandedImageTitleDescriptionCollectionViewCell: UICollectionViewCell {
         case hasContent
     }
     
-    override func awakeFromNib() {
+    nonisolated override func awakeFromNib() {
         super.awakeFromNib()
+        Task { @MainActor in
+            awakeFromNibOnMainThread()
+        }
+    }
+    
+    private func awakeFromNibOnMainThread() {
         dateLabel.adjustsFontForContentSizeCategory = true
         titleLabel.adjustsFontForContentSizeCategory = true
         addCornerRadiusWithShadow()

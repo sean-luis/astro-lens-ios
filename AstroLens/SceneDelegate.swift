@@ -20,28 +20,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let layout = UICollectionViewFlowLayout()
         return PhotoOfTheDayCollectionViewController(collectionViewLayout: layout)
     }
-    
-    private func makeTabBarController() -> UIViewController {
-        let tabBarController = UITabBarController()
-        tabBarController.tabBar.backgroundColor = .darkGray
-        
-        let landingScreenTabBarItem = UITabBarItem()
-        landingScreenTabBarItem.title = "Landing"
-        let landingScreenLayout = UICollectionViewFlowLayout()
-        let landingScreenCollectionViewController = PhotoOfTheDayCollectionViewController(collectionViewLayout: landingScreenLayout)
-        landingScreenCollectionViewController.tabBarItem = landingScreenTabBarItem
-        
-        let favouritesTabBarItem = UITabBarItem()
-        favouritesTabBarItem.title = "Favourites"
-        let favouritesScreenLayout = UICollectionViewFlowLayout()
-        favouritesScreenLayout.scrollDirection = .horizontal
-        let favouritesScreenCollectionViewController = FavouritesCollectionViewController(collectionViewLayout: favouritesScreenLayout)
-        favouritesScreenCollectionViewController.tabBarItem = favouritesTabBarItem
-        
-        tabBarController.viewControllers = [landingScreenCollectionViewController,
-                                            favouritesScreenCollectionViewController]
-        return tabBarController
-    }
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.

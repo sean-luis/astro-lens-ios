@@ -54,7 +54,7 @@ open class PastelView: UIView {
         super.init(coder: aDecoder)
     }
     
-    open override func awakeFromNib() {
+    nonisolated open override func awakeFromNib() {
         super.awakeFromNib()
     }
 
