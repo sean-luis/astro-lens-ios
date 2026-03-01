@@ -7,43 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E33318124D7F7A5005DE081 /* AnimatedTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E33318024D7F7A5005DE081 /* AnimatedTabBarItem.swift */; };
-		1E33318324D7F7C5005DE081 /* AnimatedTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E33318224D7F7C5005DE081 /* AnimatedTabBarController.swift */; };
-		1E33318524D7F856005DE081 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E33318424D7F856005DE081 /* Collection+Extensions.swift */; };
-		1E33318724D7F8A2005DE081 /* ItemAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E33318624D7F8A2005DE081 /* ItemAnimation.swift */; };
-		1E33318924D92FE9005DE081 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E33318824D92FE9005DE081 /* Badge.swift */; };
-		1E5F677824C5F27900C98622 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5F677724C5F27900C98622 /* AppDelegate.swift */; };
-		1E5F677C24C5F27900C98622 /* PhotoOfTheDayCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5F677B24C5F27900C98622 /* PhotoOfTheDayCollectionViewController.swift */; };
-		1E5F678124C5F27F00C98622 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E5F678024C5F27F00C98622 /* Assets.xcassets */; };
-		1E5F678424C5F27F00C98622 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E5F678224C5F27F00C98622 /* LaunchScreen.storyboard */; };
-		1E5F678F24C5F27F00C98622 /* AstroLensTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5F678E24C5F27F00C98622 /* AstroLensTests.swift */; };
-		1E5F679A24C5F5FA00C98622 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5F679924C5F5FA00C98622 /* SceneDelegate.swift */; };
-		1E5F67A724C5F71700C98622 /* LandingScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5F67A624C5F71700C98622 /* LandingScreenViewModel.swift */; };
-		1E5F67C324C5F83B00C98622 /* NASAApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E5F67BA24C5F83B00C98622 /* NASAApi.framework */; };
-		1E5F67CA24C5F83B00C98622 /* NASAApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5F67C924C5F83B00C98622 /* NASAApiTests.swift */; };
-		1E5F67CF24C5F83B00C98622 /* NASAApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E5F67BA24C5F83B00C98622 /* NASAApi.framework */; };
-		1E5F67D024C5F83B00C98622 /* NASAApi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1E5F67BA24C5F83B00C98622 /* NASAApi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1E5F67DA24C5F88000C98622 /* NASAServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5F67D924C5F88000C98622 /* NASAServiceImplementation.swift */; };
-		1E65E6F324C60A45004B91B7 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E65E6F224C60A45004B91B7 /* UIColor+Extensions.swift */; };
-		1E65E6F524C60A96004B91B7 /* PastelGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E65E6F424C60A96004B91B7 /* PastelGradient.swift */; };
-		1E65E6F724C60AA0004B91B7 /* PastelLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E65E6F624C60AA0004B91B7 /* PastelLabel.swift */; };
-		1E65E6F924C60AAB004B91B7 /* PastelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E65E6F824C60AAB004B91B7 /* PastelView.swift */; };
-		1E65E6FB24C60AB7004B91B7 /* PastelPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E65E6FA24C60AB7004B91B7 /* PastelPoint.swift */; };
-		1E65E6FF24C60B35004B91B7 /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E65E6FE24C60B35004B91B7 /* UIConstants.swift */; };
-		1E65E70124C60B5F004B91B7 /* FavouriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E65E70024C60B5F004B91B7 /* FavouriteButton.swift */; };
-		1E65E70424C60BC3004B91B7 /* ImageTitleDescriptionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E65E70224C60BC3004B91B7 /* ImageTitleDescriptionCollectionViewCell.xib */; };
-		1E65E70524C60BC3004B91B7 /* ImageTitleDescriptionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E65E70324C60BC3004B91B7 /* ImageTitleDescriptionCollectionViewCell.swift */; };
-		1ECACD4324E137D10013B680 /* ExpandedImageTitleDescriptionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECACD4224E137D10013B680 /* ExpandedImageTitleDescriptionCollectionViewCell.swift */; };
-		1ECACD4524E138BE0013B680 /* ExpandedImageTitleDescriptionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ECACD4424E138BE0013B680 /* ExpandedImageTitleDescriptionCollectionViewCell.xib */; };
-		1EF9616A24C6D1EC0037B17F /* DataStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EF9616124C6D1EC0037B17F /* DataStore.framework */; };
-		1EF9617124C6D1EC0037B17F /* DataStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF9617024C6D1EC0037B17F /* DataStoreTests.swift */; };
-		1EF9617624C6D1EC0037B17F /* DataStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EF9616124C6D1EC0037B17F /* DataStore.framework */; };
-		1EF9617724C6D1EC0037B17F /* DataStore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1EF9616124C6D1EC0037B17F /* DataStore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1EF9617F24C6D2480037B17F /* UserPreferencesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF9617E24C6D2480037B17F /* UserPreferencesStore.swift */; };
-		1EF9618224C6E3940037B17F /* PhotoOfTheDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF9618124C6E3940037B17F /* PhotoOfTheDay.swift */; };
-		1EF9618424C6E3A10037B17F /* PhotoOfTheDayResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF9618324C6E3A10037B17F /* PhotoOfTheDayResponse.swift */; };
-		1EF9618924C6E40B0037B17F /* LandingScreenDataLoadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF9618824C6E40B0037B17F /* LandingScreenDataLoadOperation.swift */; };
-		9F7237412F5292960096AB9D /* NASAApiAbstractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7237402F52928D0096AB9D /* NASAApiAbstractions.swift */; };
+		0D81799657C380B7359204ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3434512A2D85C050DB0B6B27 /* LaunchScreen.storyboard */; };
+		2BAA4B8CEBB129C5F27FD743 /* APODResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF59FDA8DF37F65F614B0A18 /* APODResponse.swift */; };
+		3613B394080DDE4FFC10A580 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C1AFA2B2228AFADD72F3A /* ActivityView.swift */; };
+		745F9F8228003022908D77B9 /* APODFeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6AE5E66E6C5237A3866EBC /* APODFeedViewModel.swift */; };
+		774B100E511F146D2F984D77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB3DC5FAEE777E25A612D01E /* Assets.xcassets */; };
+		87E42E29F1996A8871C3811D /* APODFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BF4667DF1FA2B90C1126E7 /* APODFeedView.swift */; };
+		9864AA7DB0F6914694298C7E /* ImageMemoryCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1481A9B83639070E07DD2C62 /* ImageMemoryCache.swift */; };
+		A46D57D0835157D553F03525 /* ImageProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EEA0F8D602F5CA063C2BEB /* ImageProcessing.swift */; };
+		AEECB7261332871EA6542DDF /* PersistenceModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8058E5AEB6C47DC6597F78 /* PersistenceModels.swift */; };
+		BFE502372E894BBEBCEE2171 /* APODModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020D3D1481FCA35AFF79E7B4 /* APODModels.swift */; };
+		CA9C0D16C3D5104D599DCCFF /* AstroLensTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134147CC898938B98E074699 /* AstroLensTests.swift */; };
+		CD8F6BB53DE16C0B5964F1DD /* APODService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8063972D904ABEF8A175175A /* APODService.swift */; };
+		D4AD968C7C915E85E91EB104 /* APODCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26ECB191F4C538DF9AAC36B2 /* APODCardView.swift */; };
+		EF1E1ED29F008243345DA07E /* AstroLensApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317FAB457DD493C1B8CDD181 /* AstroLensApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,120 +31,27 @@
 			remoteGlobalIDString = 1E5F677324C5F27900C98622;
 			remoteInfo = "AstroLens APOD";
 		};
-		1E5F67C424C5F83B00C98622 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1E5F676C24C5F27900C98622 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1E5F67B924C5F83B00C98622;
-			remoteInfo = NASAApi;
-		};
-		1E5F67C624C5F83B00C98622 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1E5F676C24C5F27900C98622 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1E5F677324C5F27900C98622;
-			remoteInfo = "AstroLens APOD";
-		};
-		1E5F67CD24C5F83B00C98622 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1E5F676C24C5F27900C98622 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1E5F67B924C5F83B00C98622;
-			remoteInfo = NASAApi;
-		};
-		1EF9616B24C6D1EC0037B17F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1E5F676C24C5F27900C98622 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1EF9616024C6D1EC0037B17F;
-			remoteInfo = DataStore;
-		};
-		1EF9616D24C6D1EC0037B17F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1E5F676C24C5F27900C98622 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1E5F677324C5F27900C98622;
-			remoteInfo = AstroLens;
-		};
-		1EF9617424C6D1EC0037B17F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1E5F676C24C5F27900C98622 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1EF9616024C6D1EC0037B17F;
-			remoteInfo = DataStore;
-		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		1E2B3F9324E1A6D7001AF4CD /* Embed Foundation Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-			);
-			name = "Embed Foundation Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1E5F67D424C5F83B00C98622 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				1EF9617724C6D1EC0037B17F /* DataStore.framework in Embed Frameworks */,
-				1E5F67D024C5F83B00C98622 /* NASAApi.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		1E2B3F8724E1A6D7001AF4CD /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
-		1E33318024D7F7A5005DE081 /* AnimatedTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTabBarItem.swift; sourceTree = "<group>"; };
-		1E33318224D7F7C5005DE081 /* AnimatedTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTabBarController.swift; sourceTree = "<group>"; };
-		1E33318424D7F856005DE081 /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
-		1E33318624D7F8A2005DE081 /* ItemAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemAnimation.swift; sourceTree = "<group>"; };
-		1E33318824D92FE9005DE081 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
-		1E5F677424C5F27900C98622 /* AstroLens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AstroLens.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E5F677724C5F27900C98622 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1E5F677B24C5F27900C98622 /* PhotoOfTheDayCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoOfTheDayCollectionViewController.swift; sourceTree = "<group>"; };
-		1E5F678024C5F27F00C98622 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1E5F678324C5F27F00C98622 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1E5F678524C5F27F00C98622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1E5F678A24C5F27F00C98622 /* AstroLensTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstroLensTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E5F678E24C5F27F00C98622 /* AstroLensTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroLensTests.swift; sourceTree = "<group>"; };
-		1E5F679024C5F27F00C98622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1E5F679924C5F5FA00C98622 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1E5F67A624C5F71700C98622 /* LandingScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingScreenViewModel.swift; sourceTree = "<group>"; };
-		1E5F67BA24C5F83B00C98622 /* NASAApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NASAApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E5F67BD24C5F83B00C98622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1E5F67C224C5F83B00C98622 /* NASAApiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NASAApiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E5F67C924C5F83B00C98622 /* NASAApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAApiTests.swift; sourceTree = "<group>"; };
-		1E5F67CB24C5F83B00C98622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1E5F67D924C5F88000C98622 /* NASAServiceImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAServiceImplementation.swift; sourceTree = "<group>"; };
-		1E65E6F224C60A45004B91B7 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
-		1E65E6F424C60A96004B91B7 /* PastelGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastelGradient.swift; sourceTree = "<group>"; };
-		1E65E6F624C60AA0004B91B7 /* PastelLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastelLabel.swift; sourceTree = "<group>"; };
-		1E65E6F824C60AAB004B91B7 /* PastelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastelView.swift; sourceTree = "<group>"; };
-		1E65E6FA24C60AB7004B91B7 /* PastelPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastelPoint.swift; sourceTree = "<group>"; };
-		1E65E6FE24C60B35004B91B7 /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
-		1E65E70024C60B5F004B91B7 /* FavouriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteButton.swift; sourceTree = "<group>"; };
-		1E65E70224C60BC3004B91B7 /* ImageTitleDescriptionCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageTitleDescriptionCollectionViewCell.xib; sourceTree = "<group>"; };
-		1E65E70324C60BC3004B91B7 /* ImageTitleDescriptionCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTitleDescriptionCollectionViewCell.swift; sourceTree = "<group>"; };
-		1ECACD4224E137D10013B680 /* ExpandedImageTitleDescriptionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedImageTitleDescriptionCollectionViewCell.swift; sourceTree = "<group>"; };
-		1ECACD4424E138BE0013B680 /* ExpandedImageTitleDescriptionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpandedImageTitleDescriptionCollectionViewCell.xib; sourceTree = "<group>"; };
-		1EF9616124C6D1EC0037B17F /* DataStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1EF9616424C6D1EC0037B17F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1EF9616924C6D1EC0037B17F /* DataStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1EF9617024C6D1EC0037B17F /* DataStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStoreTests.swift; sourceTree = "<group>"; };
-		1EF9617224C6D1EC0037B17F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1EF9617E24C6D2480037B17F /* UserPreferencesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferencesStore.swift; sourceTree = "<group>"; };
-		1EF9618124C6E3940037B17F /* PhotoOfTheDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoOfTheDay.swift; sourceTree = "<group>"; };
-		1EF9618324C6E3A10037B17F /* PhotoOfTheDayResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoOfTheDayResponse.swift; sourceTree = "<group>"; };
-		1EF9618824C6E40B0037B17F /* LandingScreenDataLoadOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingScreenDataLoadOperation.swift; sourceTree = "<group>"; };
-		9F7237402F52928D0096AB9D /* NASAApiAbstractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAApiAbstractions.swift; sourceTree = "<group>"; };
+		008F43CE1C0DACE987D1638E /* AstroLensTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 1; lastKnownFileType = wrapper.cfbundle; path = AstroLensTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01EEA0F8D602F5CA063C2BEB /* ImageProcessing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageProcessing.swift; path = Services/ImageProcessing.swift; sourceTree = "<group>"; };
+		020D3D1481FCA35AFF79E7B4 /* APODModels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APODModels.swift; path = Models/APODModels.swift; sourceTree = "<group>"; };
+		134147CC898938B98E074699 /* AstroLensTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AstroLensTests.swift; path = AstroLensTests.swift; sourceTree = "<group>"; };
+		1481A9B83639070E07DD2C62 /* ImageMemoryCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageMemoryCache.swift; path = Services/ImageMemoryCache.swift; sourceTree = "<group>"; };
+		26ECB191F4C538DF9AAC36B2 /* APODCardView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APODCardView.swift; path = Features/APOD/APODCardView.swift; sourceTree = "<group>"; };
+		317FAB457DD493C1B8CDD181 /* AstroLensApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AstroLensApp.swift; path = App/AstroLensApp.swift; sourceTree = "<group>"; };
+		3434512A2D85C050DB0B6B27 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		48BF4667DF1FA2B90C1126E7 /* APODFeedView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APODFeedView.swift; path = Features/APOD/APODFeedView.swift; sourceTree = "<group>"; };
+		5B4F8DB84716FBEAD89DA917 /* AstroLens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 1; lastKnownFileType = wrapper.application; path = AstroLens.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8063972D904ABEF8A175175A /* APODService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APODService.swift; path = Services/APODService.swift; sourceTree = "<group>"; };
+		836618C911428C8812665E3C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = Info.plist; sourceTree = "<group>"; };
+		AE53F8C231BCA2B5231842A8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = Info.plist; sourceTree = "<group>"; };
+		BB3DC5FAEE777E25A612D01E /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF59FDA8DF37F65F614B0A18 /* APODResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APODResponse.swift; path = Models/APODResponse.swift; sourceTree = "<group>"; };
+		C44C1AFA2B2228AFADD72F3A /* ActivityView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActivityView.swift; path = Shared/ActivityView.swift; sourceTree = "<group>"; };
+		CC8058E5AEB6C47DC6597F78 /* PersistenceModels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PersistenceModels.swift; path = Persistence/PersistenceModels.swift; sourceTree = "<group>"; };
+		EF6AE5E66E6C5237A3866EBC /* APODFeedViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APODFeedViewModel.swift; path = Features/APOD/APODFeedViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,8 +59,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EF9617624C6D1EC0037B17F /* DataStore.framework in Frameworks */,
-				1E5F67CF24C5F83B00C98622 /* NASAApi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,56 +69,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1E5F67B724C5F83B00C98622 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1E5F67BF24C5F83B00C98622 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1E5F67C324C5F83B00C98622 /* NASAApi.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1EF9615E24C6D1EC0037B17F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1EF9616624C6D1EC0037B17F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1EF9616A24C6D1EC0037B17F /* DataStore.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		1E2B3F8624E1A6D6001AF4CD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1E2B3F8724E1A6D7001AF4CD /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1E33317F24D7F6D6005DE081 /* TabBar */ = {
-			isa = PBXGroup;
-			children = (
-				1E33318024D7F7A5005DE081 /* AnimatedTabBarItem.swift */,
-				1E33318224D7F7C5005DE081 /* AnimatedTabBarController.swift */,
-				1E33318624D7F8A2005DE081 /* ItemAnimation.swift */,
-				1E33318824D92FE9005DE081 /* Badge.swift */,
-			);
-			path = TabBar;
 			sourceTree = "<group>";
 		};
 		1E5F676B24C5F27900C98622 = {
@@ -244,10 +84,6 @@
 			children = (
 				1E5F677624C5F27900C98622 /* AstroLens */,
 				1E5F678D24C5F27F00C98622 /* AstroLensTests */,
-				1E5F67BB24C5F83B00C98622 /* NASAApi */,
-				1E5F67C824C5F83B00C98622 /* NASAApiTests */,
-				1EF9616224C6D1EC0037B17F /* DataStore */,
-				1EF9616F24C6D1EC0037B17F /* DataStoreTests */,
 				1E2B3F8624E1A6D6001AF4CD /* Frameworks */,
 				1E5F677524C5F27900C98622 /* Products */,
 			);
@@ -256,12 +92,8 @@
 		1E5F677524C5F27900C98622 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1E5F677424C5F27900C98622 /* AstroLens.app */,
-				1E5F678A24C5F27F00C98622 /* AstroLensTests.xctest */,
-				1E5F67BA24C5F83B00C98622 /* NASAApi.framework */,
-				1E5F67C224C5F83B00C98622 /* NASAApiTests.xctest */,
-				1EF9616124C6D1EC0037B17F /* DataStore.framework */,
-				1EF9616924C6D1EC0037B17F /* DataStoreTests.xctest */,
+				5B4F8DB84716FBEAD89DA917 /* AstroLens.app */,
+				008F43CE1C0DACE987D1638E /* AstroLensTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -269,16 +101,15 @@
 		1E5F677624C5F27900C98622 /* AstroLens */ = {
 			isa = PBXGroup;
 			children = (
-				1E5F677724C5F27900C98622 /* AppDelegate.swift */,
-				1E5F679924C5F5FA00C98622 /* SceneDelegate.swift */,
-				1E5F67A124C5F67900C98622 /* Extensions */,
-				1E5F679F24C5F66E00C98622 /* ViewControllers */,
-				1E5F679E24C5F66500C98622 /* ViewModels */,
-				1EF9618724C6E3F90037B17F /* Networking */,
-				1E5F679D24C5F62C00C98622 /* UIKit */,
-				1E5F678024C5F27F00C98622 /* Assets.xcassets */,
-				1E5F678224C5F27F00C98622 /* LaunchScreen.storyboard */,
-				1E5F678524C5F27F00C98622 /* Info.plist */,
+				D02DEFAEF779AB40462E6AE1 /* App */,
+				6DE526D31F151D93CB51B6CF /* Features */,
+				3BB3443B229E2F58F60297D5 /* Services */,
+				76886CABC31E1D6CEF33E51F /* Persistence */,
+				3D600140EE7C63452AC88B39 /* Models */,
+				BAB9656916E71FCFAFABA51C /* Shared */,
+				BB3DC5FAEE777E25A612D01E /* Assets.xcassets */,
+				3434512A2D85C050DB0B6B27 /* LaunchScreen.storyboard */,
+				AE53F8C231BCA2B5231842A8 /* Info.plist */,
 			);
 			path = AstroLens;
 			sourceTree = "<group>";
@@ -286,152 +117,74 @@
 		1E5F678D24C5F27F00C98622 /* AstroLensTests */ = {
 			isa = PBXGroup;
 			children = (
-				1E5F678E24C5F27F00C98622 /* AstroLensTests.swift */,
-				1E5F679024C5F27F00C98622 /* Info.plist */,
+				134147CC898938B98E074699 /* AstroLensTests.swift */,
+				836618C911428C8812665E3C /* Info.plist */,
 			);
 			path = AstroLensTests;
 			sourceTree = "<group>";
 		};
-		1E5F679B24C5F61600C98622 /* Cells */ = {
+		3750E88BDF13F0FE23CD0963 /* APOD */ = {
 			isa = PBXGroup;
 			children = (
-				1E65E70324C60BC3004B91B7 /* ImageTitleDescriptionCollectionViewCell.swift */,
-				1E65E70224C60BC3004B91B7 /* ImageTitleDescriptionCollectionViewCell.xib */,
-				1ECACD4224E137D10013B680 /* ExpandedImageTitleDescriptionCollectionViewCell.swift */,
-				1ECACD4424E138BE0013B680 /* ExpandedImageTitleDescriptionCollectionViewCell.xib */,
+				48BF4667DF1FA2B90C1126E7 /* APODFeedView.swift */,
+				26ECB191F4C538DF9AAC36B2 /* APODCardView.swift */,
+				EF6AE5E66E6C5237A3866EBC /* APODFeedViewModel.swift */,
 			);
-			path = Cells;
+			name = APOD;
 			sourceTree = "<group>";
 		};
-		1E5F679C24C5F62400C98622 /* Buttons */ = {
+		3BB3443B229E2F58F60297D5 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				1E65E70024C60B5F004B91B7 /* FavouriteButton.swift */,
+				8063972D904ABEF8A175175A /* APODService.swift */,
+				01EEA0F8D602F5CA063C2BEB /* ImageProcessing.swift */,
+				1481A9B83639070E07DD2C62 /* ImageMemoryCache.swift */,
 			);
-			path = Buttons;
+			name = Services;
 			sourceTree = "<group>";
 		};
-		1E5F679D24C5F62C00C98622 /* UIKit */ = {
+		3D600140EE7C63452AC88B39 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1E65E6FE24C60B35004B91B7 /* UIConstants.swift */,
-				1E5F67A824C5F76700C98622 /* Pastel */,
-				1E5F679B24C5F61600C98622 /* Cells */,
-				1E5F679C24C5F62400C98622 /* Buttons */,
-				1E33317F24D7F6D6005DE081 /* TabBar */,
+				020D3D1481FCA35AFF79E7B4 /* APODModels.swift */,
+				BF59FDA8DF37F65F614B0A18 /* APODResponse.swift */,
 			);
-			path = UIKit;
+			name = Models;
 			sourceTree = "<group>";
 		};
-		1E5F679E24C5F66500C98622 /* ViewModels */ = {
+		6DE526D31F151D93CB51B6CF /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				1E5F67A624C5F71700C98622 /* LandingScreenViewModel.swift */,
+				3750E88BDF13F0FE23CD0963 /* APOD */,
 			);
-			path = ViewModels;
+			name = Features;
 			sourceTree = "<group>";
 		};
-		1E5F679F24C5F66E00C98622 /* ViewControllers */ = {
+		76886CABC31E1D6CEF33E51F /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
-				1E5F677B24C5F27900C98622 /* PhotoOfTheDayCollectionViewController.swift */,
+				CC8058E5AEB6C47DC6597F78 /* PersistenceModels.swift */,
 			);
-			path = ViewControllers;
+			name = Persistence;
 			sourceTree = "<group>";
 		};
-		1E5F67A124C5F67900C98622 /* Extensions */ = {
+		BAB9656916E71FCFAFABA51C /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				1E65E6F224C60A45004B91B7 /* UIColor+Extensions.swift */,
-				1E33318424D7F856005DE081 /* Collection+Extensions.swift */,
+				C44C1AFA2B2228AFADD72F3A /* ActivityView.swift */,
 			);
-			path = Extensions;
+			name = Shared;
 			sourceTree = "<group>";
 		};
-		1E5F67A824C5F76700C98622 /* Pastel */ = {
+		D02DEFAEF779AB40462E6AE1 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				1E65E6F424C60A96004B91B7 /* PastelGradient.swift */,
-				1E65E6F624C60AA0004B91B7 /* PastelLabel.swift */,
-				1E65E6F824C60AAB004B91B7 /* PastelView.swift */,
-				1E65E6FA24C60AB7004B91B7 /* PastelPoint.swift */,
+				317FAB457DD493C1B8CDD181 /* AstroLensApp.swift */,
 			);
-			path = Pastel;
-			sourceTree = "<group>";
-		};
-		1E5F67BB24C5F83B00C98622 /* NASAApi */ = {
-			isa = PBXGroup;
-			children = (
-				9F7237402F52928D0096AB9D /* NASAApiAbstractions.swift */,
-				1E5F67D924C5F88000C98622 /* NASAServiceImplementation.swift */,
-				1EF9618024C6D33F0037B17F /* Models */,
-				1E5F67BD24C5F83B00C98622 /* Info.plist */,
-			);
-			path = NASAApi;
-			sourceTree = "<group>";
-		};
-		1E5F67C824C5F83B00C98622 /* NASAApiTests */ = {
-			isa = PBXGroup;
-			children = (
-				1E5F67C924C5F83B00C98622 /* NASAApiTests.swift */,
-				1E5F67CB24C5F83B00C98622 /* Info.plist */,
-			);
-			path = NASAApiTests;
-			sourceTree = "<group>";
-		};
-		1EF9616224C6D1EC0037B17F /* DataStore */ = {
-			isa = PBXGroup;
-			children = (
-				1EF9616424C6D1EC0037B17F /* Info.plist */,
-				1EF9617E24C6D2480037B17F /* UserPreferencesStore.swift */,
-			);
-			path = DataStore;
-			sourceTree = "<group>";
-		};
-		1EF9616F24C6D1EC0037B17F /* DataStoreTests */ = {
-			isa = PBXGroup;
-			children = (
-				1EF9617024C6D1EC0037B17F /* DataStoreTests.swift */,
-				1EF9617224C6D1EC0037B17F /* Info.plist */,
-			);
-			path = DataStoreTests;
-			sourceTree = "<group>";
-		};
-		1EF9618024C6D33F0037B17F /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				1EF9618124C6E3940037B17F /* PhotoOfTheDay.swift */,
-				1EF9618324C6E3A10037B17F /* PhotoOfTheDayResponse.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		1EF9618724C6E3F90037B17F /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-				1EF9618824C6E40B0037B17F /* LandingScreenDataLoadOperation.swift */,
-			);
-			path = Networking;
+			name = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		1E5F67B524C5F83B00C98622 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1EF9615C24C6D1EC0037B17F /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		1E5F677324C5F27900C98622 /* AstroLens */ = {
@@ -441,18 +194,14 @@
 				1E5F677024C5F27900C98622 /* Sources */,
 				1E5F677124C5F27900C98622 /* Frameworks */,
 				1E5F677224C5F27900C98622 /* Resources */,
-				1E5F67D424C5F83B00C98622 /* Embed Frameworks */,
-				1E2B3F9324E1A6D7001AF4CD /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1E5F67CE24C5F83B00C98622 /* PBXTargetDependency */,
-				1EF9617524C6D1EC0037B17F /* PBXTargetDependency */,
 			);
 			name = AstroLens;
 			productName = "AstroLens APOD";
-			productReference = 1E5F677424C5F27900C98622 /* AstroLens.app */;
+			productReference = 5B4F8DB84716FBEAD89DA917 /* AstroLens.app */;
 			productType = "com.apple.product-type.application";
 		};
 		1E5F678924C5F27F00C98622 /* AstroLensTests */ = {
@@ -470,81 +219,7 @@
 			);
 			name = AstroLensTests;
 			productName = "AstroLens APODTests";
-			productReference = 1E5F678A24C5F27F00C98622 /* AstroLensTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		1E5F67B924C5F83B00C98622 /* NASAApi */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1E5F67D124C5F83B00C98622 /* Build configuration list for PBXNativeTarget "NASAApi" */;
-			buildPhases = (
-				1E5F67B524C5F83B00C98622 /* Headers */,
-				1E5F67B624C5F83B00C98622 /* Sources */,
-				1E5F67B724C5F83B00C98622 /* Frameworks */,
-				1E5F67B824C5F83B00C98622 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = NASAApi;
-			productName = NASAApi;
-			productReference = 1E5F67BA24C5F83B00C98622 /* NASAApi.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		1E5F67C124C5F83B00C98622 /* NASAApiTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1E5F67D524C5F83B00C98622 /* Build configuration list for PBXNativeTarget "NASAApiTests" */;
-			buildPhases = (
-				1E5F67BE24C5F83B00C98622 /* Sources */,
-				1E5F67BF24C5F83B00C98622 /* Frameworks */,
-				1E5F67C024C5F83B00C98622 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1E5F67C524C5F83B00C98622 /* PBXTargetDependency */,
-				1E5F67C724C5F83B00C98622 /* PBXTargetDependency */,
-			);
-			name = NASAApiTests;
-			productName = NASAApiTests;
-			productReference = 1E5F67C224C5F83B00C98622 /* NASAApiTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		1EF9616024C6D1EC0037B17F /* DataStore */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1EF9617824C6D1EC0037B17F /* Build configuration list for PBXNativeTarget "DataStore" */;
-			buildPhases = (
-				1EF9615C24C6D1EC0037B17F /* Headers */,
-				1EF9615D24C6D1EC0037B17F /* Sources */,
-				1EF9615E24C6D1EC0037B17F /* Frameworks */,
-				1EF9615F24C6D1EC0037B17F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = DataStore;
-			productName = DataStore;
-			productReference = 1EF9616124C6D1EC0037B17F /* DataStore.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		1EF9616824C6D1EC0037B17F /* DataStoreTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1EF9617B24C6D1EC0037B17F /* Build configuration list for PBXNativeTarget "DataStoreTests" */;
-			buildPhases = (
-				1EF9616524C6D1EC0037B17F /* Sources */,
-				1EF9616624C6D1EC0037B17F /* Frameworks */,
-				1EF9616724C6D1EC0037B17F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1EF9616C24C6D1EC0037B17F /* PBXTargetDependency */,
-				1EF9616E24C6D1EC0037B17F /* PBXTargetDependency */,
-			);
-			name = DataStoreTests;
-			productName = DataStoreTests;
-			productReference = 1EF9616924C6D1EC0037B17F /* DataStoreTests.xctest */;
+			productReference = 008F43CE1C0DACE987D1638E /* AstroLensTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -565,22 +240,6 @@
 						CreatedOnToolsVersion = 11.6;
 						TestTargetID = 1E5F677324C5F27900C98622;
 					};
-					1E5F67B924C5F83B00C98622 = {
-						CreatedOnToolsVersion = 11.6;
-						LastSwiftMigration = 1160;
-					};
-					1E5F67C124C5F83B00C98622 = {
-						CreatedOnToolsVersion = 11.6;
-						TestTargetID = 1E5F677324C5F27900C98622;
-					};
-					1EF9616024C6D1EC0037B17F = {
-						CreatedOnToolsVersion = 11.6;
-						LastSwiftMigration = 1160;
-					};
-					1EF9616824C6D1EC0037B17F = {
-						CreatedOnToolsVersion = 11.6;
-						TestTargetID = 1E5F677324C5F27900C98622;
-					};
 				};
 			};
 			buildConfigurationList = 1E5F676F24C5F27900C98622 /* Build configuration list for PBXProject "AstroLens" */;
@@ -598,10 +257,6 @@
 			targets = (
 				1E5F677324C5F27900C98622 /* AstroLens */,
 				1E5F678924C5F27F00C98622 /* AstroLensTests */,
-				1E5F67B924C5F83B00C98622 /* NASAApi */,
-				1E5F67C124C5F83B00C98622 /* NASAApiTests */,
-				1EF9616024C6D1EC0037B17F /* DataStore */,
-				1EF9616824C6D1EC0037B17F /* DataStoreTests */,
 			);
 		};
 /* End PBXProject section */
@@ -611,42 +266,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E5F678424C5F27F00C98622 /* LaunchScreen.storyboard in Resources */,
-				1ECACD4524E138BE0013B680 /* ExpandedImageTitleDescriptionCollectionViewCell.xib in Resources */,
-				1E5F678124C5F27F00C98622 /* Assets.xcassets in Resources */,
-				1E65E70424C60BC3004B91B7 /* ImageTitleDescriptionCollectionViewCell.xib in Resources */,
+				774B100E511F146D2F984D77 /* Assets.xcassets in Resources */,
+				0D81799657C380B7359204ED /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1E5F678824C5F27F00C98622 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1E5F67B824C5F83B00C98622 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1E5F67C024C5F83B00C98622 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1EF9615F24C6D1EC0037B17F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1EF9616724C6D1EC0037B17F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -660,25 +285,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EF9618924C6E40B0037B17F /* LandingScreenDataLoadOperation.swift in Sources */,
-				1E65E6FB24C60AB7004B91B7 /* PastelPoint.swift in Sources */,
-				1E5F67A724C5F71700C98622 /* LandingScreenViewModel.swift in Sources */,
-				1E65E6F324C60A45004B91B7 /* UIColor+Extensions.swift in Sources */,
-				1E5F677C24C5F27900C98622 /* PhotoOfTheDayCollectionViewController.swift in Sources */,
-				1E65E70524C60BC3004B91B7 /* ImageTitleDescriptionCollectionViewCell.swift in Sources */,
-				1E5F677824C5F27900C98622 /* AppDelegate.swift in Sources */,
-				1E33318924D92FE9005DE081 /* Badge.swift in Sources */,
-				1E5F679A24C5F5FA00C98622 /* SceneDelegate.swift in Sources */,
-				1E65E6F524C60A96004B91B7 /* PastelGradient.swift in Sources */,
-				1E65E6F724C60AA0004B91B7 /* PastelLabel.swift in Sources */,
-				1E65E70124C60B5F004B91B7 /* FavouriteButton.swift in Sources */,
-				1E65E6F924C60AAB004B91B7 /* PastelView.swift in Sources */,
-				1E65E6FF24C60B35004B91B7 /* UIConstants.swift in Sources */,
-				1ECACD4324E137D10013B680 /* ExpandedImageTitleDescriptionCollectionViewCell.swift in Sources */,
-				1E33318724D7F8A2005DE081 /* ItemAnimation.swift in Sources */,
-				1E33318524D7F856005DE081 /* Collection+Extensions.swift in Sources */,
-				1E33318124D7F7A5005DE081 /* AnimatedTabBarItem.swift in Sources */,
-				1E33318324D7F7C5005DE081 /* AnimatedTabBarController.swift in Sources */,
+				EF1E1ED29F008243345DA07E /* AstroLensApp.swift in Sources */,
+				87E42E29F1996A8871C3811D /* APODFeedView.swift in Sources */,
+				D4AD968C7C915E85E91EB104 /* APODCardView.swift in Sources */,
+				745F9F8228003022908D77B9 /* APODFeedViewModel.swift in Sources */,
+				CD8F6BB53DE16C0B5964F1DD /* APODService.swift in Sources */,
+				A46D57D0835157D553F03525 /* ImageProcessing.swift in Sources */,
+				9864AA7DB0F6914694298C7E /* ImageMemoryCache.swift in Sources */,
+				AEECB7261332871EA6542DDF /* PersistenceModels.swift in Sources */,
+				BFE502372E894BBEBCEE2171 /* APODModels.swift in Sources */,
+				2BAA4B8CEBB129C5F27FD743 /* APODResponse.swift in Sources */,
+				3613B394080DDE4FFC10A580 /* ActivityView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -686,42 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E5F678F24C5F27F00C98622 /* AstroLensTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1E5F67B624C5F83B00C98622 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1EF9618424C6E3A10037B17F /* PhotoOfTheDayResponse.swift in Sources */,
-				1EF9618224C6E3940037B17F /* PhotoOfTheDay.swift in Sources */,
-				9F7237412F5292960096AB9D /* NASAApiAbstractions.swift in Sources */,
-				1E5F67DA24C5F88000C98622 /* NASAServiceImplementation.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1E5F67BE24C5F83B00C98622 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1E5F67CA24C5F83B00C98622 /* NASAApiTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1EF9615D24C6D1EC0037B17F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1EF9617F24C6D2480037B17F /* UserPreferencesStore.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1EF9616524C6D1EC0037B17F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1EF9617124C6D1EC0037B17F /* DataStoreTests.swift in Sources */,
+				CA9C0D16C3D5104D599DCCFF /* AstroLensTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -733,48 +315,7 @@
 			target = 1E5F677324C5F27900C98622 /* AstroLens */;
 			targetProxy = 1E5F678B24C5F27F00C98622 /* PBXContainerItemProxy */;
 		};
-		1E5F67C524C5F83B00C98622 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1E5F67B924C5F83B00C98622 /* NASAApi */;
-			targetProxy = 1E5F67C424C5F83B00C98622 /* PBXContainerItemProxy */;
-		};
-		1E5F67C724C5F83B00C98622 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1E5F677324C5F27900C98622 /* AstroLens */;
-			targetProxy = 1E5F67C624C5F83B00C98622 /* PBXContainerItemProxy */;
-		};
-		1E5F67CE24C5F83B00C98622 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1E5F67B924C5F83B00C98622 /* NASAApi */;
-			targetProxy = 1E5F67CD24C5F83B00C98622 /* PBXContainerItemProxy */;
-		};
-		1EF9616C24C6D1EC0037B17F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1EF9616024C6D1EC0037B17F /* DataStore */;
-			targetProxy = 1EF9616B24C6D1EC0037B17F /* PBXContainerItemProxy */;
-		};
-		1EF9616E24C6D1EC0037B17F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1E5F677324C5F27900C98622 /* AstroLens */;
-			targetProxy = 1EF9616D24C6D1EC0037B17F /* PBXContainerItemProxy */;
-		};
-		1EF9617524C6D1EC0037B17F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1EF9616024C6D1EC0037B17F /* DataStore */;
-			targetProxy = 1EF9617424C6D1EC0037B17F /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		1E5F678224C5F27F00C98622 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1E5F678324C5F27F00C98622 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1E5F679124C5F27F00C98622 /* Debug */ = {
@@ -948,8 +489,8 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "AstroLens APODTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				INFOPLIST_FILE = AstroLensTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -969,228 +510,14 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "AstroLens APODTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				INFOPLIST_FILE = AstroLensTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "seanluis.AstroLens-APODTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 6.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AstroLens.app/AstroLens";
-				TVOS_DEPLOYMENT_TARGET = 26.0;
-			};
-			name = Release;
-		};
-		1E5F67D224C5F83B00C98622 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				INFOPLIST_FILE = NASAApi/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
-				PRODUCT_BUNDLE_IDENTIFIER = seanluis.NASAApi;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 6.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TVOS_DEPLOYMENT_TARGET = 26.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		1E5F67D324C5F83B00C98622 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				INFOPLIST_FILE = NASAApi/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
-				PRODUCT_BUNDLE_IDENTIFIER = seanluis.NASAApi;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_VERSION = 6.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TVOS_DEPLOYMENT_TARGET = 26.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		1E5F67D624C5F83B00C98622 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = NASAApiTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = seanluis.NASAApiTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 6.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AstroLens.app/AstroLens";
-				TVOS_DEPLOYMENT_TARGET = 26.0;
-			};
-			name = Debug;
-		};
-		1E5F67D724C5F83B00C98622 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = NASAApiTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = seanluis.NASAApiTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 6.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AstroLens.app/AstroLens";
-				TVOS_DEPLOYMENT_TARGET = 26.0;
-			};
-			name = Release;
-		};
-		1EF9617924C6D1EC0037B17F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				INFOPLIST_FILE = DataStore/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
-				PRODUCT_BUNDLE_IDENTIFIER = seanluis.DataStore;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 6.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TVOS_DEPLOYMENT_TARGET = 26.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		1EF9617A24C6D1EC0037B17F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = NO;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				INFOPLIST_FILE = DataStore/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
-				PRODUCT_BUNDLE_IDENTIFIER = seanluis.DataStore;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_VERSION = 6.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TVOS_DEPLOYMENT_TARGET = 26.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		1EF9617C24C6D1EC0037B17F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DataStoreTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = seanluis.DataStoreTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 6.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AstroLens.app/AstroLens";
-				TVOS_DEPLOYMENT_TARGET = 26.0;
-			};
-			name = Debug;
-		};
-		1EF9617D24C6D1EC0037B17F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DataStoreTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = seanluis.DataStoreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1225,42 +552,6 @@
 			buildConfigurations = (
 				1E5F679724C5F27F00C98622 /* Debug */,
 				1E5F679824C5F27F00C98622 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1E5F67D124C5F83B00C98622 /* Build configuration list for PBXNativeTarget "NASAApi" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1E5F67D224C5F83B00C98622 /* Debug */,
-				1E5F67D324C5F83B00C98622 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1E5F67D524C5F83B00C98622 /* Build configuration list for PBXNativeTarget "NASAApiTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1E5F67D624C5F83B00C98622 /* Debug */,
-				1E5F67D724C5F83B00C98622 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1EF9617824C6D1EC0037B17F /* Build configuration list for PBXNativeTarget "DataStore" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1EF9617924C6D1EC0037B17F /* Debug */,
-				1EF9617A24C6D1EC0037B17F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1EF9617B24C6D1EC0037B17F /* Build configuration list for PBXNativeTarget "DataStoreTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1EF9617C24C6D1EC0037B17F /* Debug */,
-				1EF9617D24C6D1EC0037B17F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
