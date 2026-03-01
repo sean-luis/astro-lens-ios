@@ -6,6 +6,7 @@ import SwiftUI
 @Observable
 final class APODFeedViewModel {
     private(set) var cards: [APODCard] = []
+    private(set) var favoriteDates: Set<String> = []
     private(set) var isPageLoading = false
 
     private let modelContext: ModelContext
@@ -22,6 +23,7 @@ final class APODFeedViewModel {
         self.modelContext = modelContext
         self.service = service
         self.imageCache = imageCache
+        loadFavoriteDates()
     }
 
     func loadInitialIfNeeded() async {
@@ -58,16 +60,17 @@ final class APODFeedViewModel {
         let descriptor = FetchDescriptor<FavoriteAPOD>(predicate: #Predicate { $0.date == date })
         if let existing = try? modelContext.fetch(descriptor).first {
             modelContext.delete(existing)
+            favoriteDates.remove(date)
         } else {
             modelContext.insert(FavoriteAPOD(date: date))
+            favoriteDates.insert(date)
         }
 
         try? modelContext.save()
     }
 
     func isFavorite(date: String) -> Bool {
-        let descriptor = FetchDescriptor<FavoriteAPOD>(predicate: #Predicate { $0.date == date })
-        return (try? modelContext.fetchCount(descriptor)) ?? 0 > 0
+        favoriteDates.contains(date)
     }
 
     private func loadNextPage() async {
@@ -237,5 +240,11 @@ final class APODFeedViewModel {
         cached.imageData = data
         cached.updatedAt = .now
         try? modelContext.save()
+    }
+
+    private func loadFavoriteDates() {
+        let descriptor = FetchDescriptor<FavoriteAPOD>()
+        let favorites = (try? modelContext.fetch(descriptor)) ?? []
+        favoriteDates = Set(favorites.map(\.date))
     }
 }

@@ -15,7 +15,7 @@ struct AstroLensApp: App {
 
     var body: some Scene {
         WindowGroup {
-            APODFeedView()
+            APODFeedView(viewModel: APODFeedViewModel(modelContext: container.mainContext))
                 .modelContainer(container)
         }
     }

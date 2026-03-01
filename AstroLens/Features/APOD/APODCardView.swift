@@ -102,6 +102,8 @@ struct APODCardView: View {
             }
             .buttonStyle(.bordered)
             .tint(isFavorite ? .pink : .indigo)
+            .contentTransition(.symbolEffect(.replace))
+            .animation(.spring(response: 0.35, dampingFraction: 0.84), value: isFavorite)
 
             Spacer()
 

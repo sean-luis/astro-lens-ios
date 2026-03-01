@@ -2,35 +2,40 @@ import SwiftData
 import SwiftUI
 
 struct APODFeedView: View {
-    @Environment(\.modelContext) private var modelContext
-    @State private var viewModel: APODFeedViewModel?
+    @State private var viewModel: APODFeedViewModel
     @State private var sharePayload: SharePayload?
+
+    init(viewModel: APODFeedViewModel) {
+        _viewModel = State(initialValue: viewModel)
+    }
 
     var body: some View {
         NavigationStack {
             ScrollView {
                 LazyVStack(spacing: 14) {
-                    ForEach(viewModel?.cards ?? []) { card in
+                    ForEach(viewModel.cards) { card in
                         APODCardView(
                             card: card,
-                            isFavorite: viewModel?.isFavorite(date: card.date) ?? false,
+                            isFavorite: viewModel.isFavorite(date: card.date),
                             onToggleFavorite: {
-                                viewModel?.toggleFavorite(date: card.date)
+                                withAnimation(.spring(response: 0.35, dampingFraction: 0.84)) {
+                                    viewModel.toggleFavorite(date: card.date)
+                                }
                             },
                             onRetry: {
-                                Task { await viewModel?.retry(cardID: card.id) }
+                                Task { await viewModel.retry(cardID: card.id) }
                             },
                             onShare: {
                                 sharePayload = makeSharePayload(for: card)
                             }
                         )
                         .task {
-                            await viewModel?.loadNextPageIfNeeded(currentCardID: card.id)
+                            await viewModel.loadNextPageIfNeeded(currentCardID: card.id)
                         }
                         .transition(.asymmetric(insertion: .scale(scale: 0.95).combined(with: .opacity), removal: .opacity))
                     }
 
-                    if viewModel?.isPageLoading == true {
+                    if viewModel.isPageLoading {
                         ProgressView("Loading more APODs...")
                             .padding(.vertical, 24)
                             .tint(.indigo)
@@ -43,13 +48,10 @@ struct APODFeedView: View {
             .navigationTitle("AstroLens")
             .navigationBarTitleDisplayMode(.large)
             .task {
-                if viewModel == nil {
-                    viewModel = APODFeedViewModel(modelContext: modelContext)
-                }
-                await viewModel?.loadInitialIfNeeded()
+                await viewModel.loadInitialIfNeeded()
             }
             .refreshable {
-                await viewModel?.refresh()
+                await viewModel.refresh()
             }
             .sheet(item: $sharePayload) { payload in
                 ActivityView(items: payload.items)
